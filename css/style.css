@@ -22,7 +22,7 @@ a {
 header {
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: rgb(204, 8, 8);
     display: flex;
 }
 
@@ -58,6 +58,7 @@ h1 {
 main {
     background-color: rgb(56, 55, 55);
     width: 100%;
+    /* background: url(../imges/bg.jpg)no-repeat center/cover; */
 }
 
 section {
@@ -70,17 +71,17 @@ section {
     border: 8px solid #000;
     width: 50%;
     height: 40rem;
-    background-color: #fff;
     position: absolute;
     top: 10%;
     left: 40%;
     rotate: 5deg;
+    background: url(../imges/logo.png)no-repeat center/cover;
 }
 
 .box2 {
     width: 50rem;
     height: 60rem;
-    background: url(../imges/1x/popconGM.png)no-repeat center/ 50%;
+    background: url(../imges/popconGM.png)no-repeat center/ 50%;
     position: absolute;
     top: 17%;
     left: 20%;
@@ -181,7 +182,7 @@ section {
   .kernel {
     width: 50px;
     height: 50px;
-    background: url(../imges/1x/popconb.png)no-repeat center/cover;
+    background: url(../imges/popconb.png)no-repeat center/cover;
     border-radius: 50%;
     position: absolute;
     overflow: hidden;
@@ -199,7 +200,7 @@ section {
     transform-origin: 0 0;
     position: absolute;
     top: 40%; left: 38%;
-    background: url(../imges/1x/popconb.png)no-repeat center/cover;
+    background: url(../imges/popconb.png)no-repeat center/cover;
     
   }
   .popcorns img:nth-child(2) {
@@ -249,7 +250,7 @@ section {
 .nav-side {
     width: 130px;
     height: 700px;
-    background : url(/imges/1x/SVG/kh2.svg)no-repeat center/contain;
+    background : url(../imges/kh2.svg)no-repeat center/contain;
     position: fixed;
     top: 18%;
     left: 92%;
@@ -271,10 +272,13 @@ section {
 }
 .my-works1 {
     width: 90%;
-    height: 400px;
-    background: url(/imges/1x/slate-top.png)no-repeat center/contain;
+    height: 380px;
+    background: url(../imges/slate-top.png)no-repeat center/contain;
     position: absolute;
-    left: 4%;
+    top: -4%; left: 3%;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
 }
 
 .my-works1 h2 {
@@ -288,7 +292,7 @@ section {
 .my-works2 {
     width: 60%;
     height: 750px;
-    background: url(/imges/1x/slate-bot.png)no-repeat top/cover;
+    background: url(../imges/slate-bot.png)no-repeat top/cover;
     position: absolute;
     top: 33.5%; left: 19.6%;
 }
@@ -442,7 +446,7 @@ section {
 .my-works3 {
     width: 50%;
     height: 400px;
-    background : url(/imges/1x/cct.svg)no-repeat center/cover;
+    background : url(../imges/cct.svg)no-repeat center/cover;
     position: absolute;
     top: 35%; left:-5%;
     rotate: 20deg;
@@ -457,7 +461,7 @@ section {
     animation: rotateccf 2s infinite;
     box-shadow: 0 0 15px #fff67d;
 } */
-.my-works3 .ccf2 {
+.my-works3 .ccf1 {
     width: 50%;
     height: 200px;
 
@@ -481,17 +485,25 @@ section {
     border-radius: 50%;
     
 }
+#ccf3 {
+    width: 17rem;
+    height: 9rem;
+    position: absolute;
+    top: 38%; left: 20%;
+    border-radius: 15px;
+    
+}
 .my-works3 img {
     width: 200px;
     height: 200px;
 }
 .my-works3 span {
     width: 300px;
-    height: 300px;
+    height: 400px;
     border: 2px solid yellow;
     background-color: yellow;
     position: absolute;
-    top: 18.5%; left: 60%;
+    top: 7%; left: 65%;
     rotate: -90deg;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     animation: opacitypath 5s infinite;
@@ -515,7 +527,7 @@ section {
         opacity: 0%;
     }
     50% {
-        opacity: 70%;
+        opacity: 63%;
     }
 
     100% {
@@ -527,7 +539,7 @@ section {
 .boder-s {
     width: 60%;
     height: 750px;
-    background: url(/imges/1x/slate-bot.png)no-repeat bottom/cover;
+    background: url(../imges/slate-bot.png)no-repeat bottom/cover;
     position: absolute;
     top: 30.5%; left: 32.6%;
     /* rotate: 1deg; */
@@ -760,7 +772,7 @@ section {
 .contact2 .sns-box li {
     width: 100px;
     height: 100px;
-    /* background: url(/imges/1x/google.png)no-repeat center/cover;
+    /* background: url(../imges/google.png)no-repeat center/cover;
     border: 1px solid #333;
     border-radius: 40px; */
 
@@ -803,7 +815,7 @@ section {
     display: none;
     position: fixed; /* 화면에 고정 */
     z-index: 99; /* 다른 요소 위에 표시 */
-    background : url(/imges/1x/SVG/kh.svg)no-repeat center/contain;
+    background : url(../imges/kh.svg)no-repeat center/contain;
     cursor: pointer; /* 마우스 오버 시 커서 변경 */
     border-radius: 10px; /* 모서리 둥글게 */
     bottom: 20px; /* 아래쪽 여백 */

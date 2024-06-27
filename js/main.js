@@ -59,3 +59,18 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const slateTop = document.querySelector('.my-works1');
+  
+    function clapSlate() {
+      slateTop.style.transform = 'rotate(0deg)';
+  
+      setTimeout(() => {
+        slateTop.style.transform = 'rotate(8deg)';
+      }, 500); // 0.5초 후 원래 위치로 돌아옴
+    }
+  
+    // 일정 시간마다 clapSlate 함수 실행
+    setInterval(clapSlate, 2000); // 2초마다 슬레이트 치기
+  });
